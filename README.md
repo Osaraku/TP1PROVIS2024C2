@@ -2,8 +2,8 @@
 
 ## Deskripsi Program
 
-## Desain Program
-![TP1Provis drawio](https://github.com/Osaraku/TP1PROVIS2024C2/assets/117560099/16158f77-58dc-4915-acea-fcbb7591d722)
+# Desain Program
+#![TP1Provis drawio_waifu2x_art_scan_noise1_scale](https://github.com/Osaraku/TP1PROVIS2024C2/assets/117560099/c0d80f6f-1520-4546-a7c9-c0cfdb21e470)
 
 ## Penjelasan Desain Program
 
