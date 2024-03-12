@@ -9,17 +9,17 @@ Program file downloader menggunakan bahasa Dart yang mengimplementasikan OOP (Ob
 ## Penjelasan Desain Program
 Berikut penjelasan kelas-kelas pada desain diatas:
 1. Kelas File:
-   - Kelas `File` merupakan parent dari kelas `Image` dan `Document`
+   - Kelas File merupakan parent dari kelas Image dan Document
    - Kelas ini memiliki atribut `_url` dan `_size` yang merupakan URL file dan ukuran file.
    - Terdapat konstruktor untuk inisialisasi atribut `_url` dan `_size`.
-   - Getter dan setter digunakan untuk mengakses dan memodifikasi atribut `_url` dan `_size`.
+   - Getter dan setter digunakan untuk mengakses dan memodifikasi kedua atribut tersebut.
 2. Kelas Image:
-   - Kelasi ini adalah kelas turunan dari kelas `File` yang menambahkan atribut `_resolution` dan `_format`.
-   - Terdapat konstruktor yang memanggil konstruktor kelas induk (`super`) untuk inisialisasi atribut `_url` dan `_size`, serta inisialisasi atribut tambahan.
+   - Kelasi ini adalah kelas turunan dari kelas File yang menambahkan atribut `_resolution` dan `_format`.
+   - Terdapat konstruktor yang memanggil konstruktor kelas induk (super) untuk inisialisasi atribut `_url` dan `_size`, serta inisialisasi atribut tambahan.
    - Getter dan setter digunakan untuk mengakses dan memodifikasi atribut `_resolution` dan `_format`.
 3. Kelas Document:
-   - Seperti kelas `Image`, kelas ini juga adalah kelas turunan dari `File` yang menambahkan atribut `_format` dan `_author`.
-   - Konstruktor kelas `Document` juga memanggil konstruktor kelas induk (`super`) untuk inisialisasi atribut `_url` dan `_size`, serta inisialisasi atribut tambahan.
+   - Seperti kelas Image, kelas ini juga adalah kelas turunan dari File yang menambahkan atribut `_format` dan `_author`.
+   - Konstruktor kelas Document juga memanggil konstruktor kelas induk (super) untuk inisialisasi atribut `_url` dan `_size`, serta inisialisasi atribut tambahan.
    - Getter dan setter digunakan untuk mengakses dan memodifikasi atribut `_format` dan `_author`.
 4. Kelas DownloadImage:
    - Kelas ini adalah kelas yang bertanggung jawab untuk mengelola unduhan gambar.
@@ -27,7 +27,7 @@ Berikut penjelasan kelas-kelas pada desain diatas:
    - Memiliki metode `addImage()` untuk menambahkan gambar ke dalam daftar unduhan.
    - Memiliki metode `downloading()` untuk melakukan unduhan secara asinkron. Metode ini mencetak detail unduhan dan menghitung total ukuran gambar yang diunduh.
 5. Kelas DownloadDocument:
-   - Kelas ini mirip dengan kelas `ImageDownloader`, kelas `DocumentDownloader` ini adalah kelas yang mengelola unduhan dokumen.
+   - Kelas ini mirip dengan kelas ImageDownloader, kelas DocumentDownloader ini adalah kelas yang mengelola unduhan dokumen.
    - Mempunyai atribut `documents[]` berupa daftar dokumen yang akan diunduh.
    - Memiliki metode `addDocument()` untuk menambahkan dokumen ke dalam daftar unduhan.
    - Memiliki metode `downloading()` untuk melakukan unduhan secara asinkron. Metode ini mencetak detail unduhan dan menghitung total ukuran dokumen yang diunduh.
